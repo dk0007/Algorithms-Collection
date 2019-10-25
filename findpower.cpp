@@ -27,3 +27,10 @@ int main(){
   _fast
   solve();
 }
+
+/*
+Input
+2 5
+Output 
+32
+*/
