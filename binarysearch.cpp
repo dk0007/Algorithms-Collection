@@ -23,11 +23,12 @@ ll binarysearch(vector<ll> a, ll low, ll high, ll x){
 void solve(){
     ll n,k,x;
     cin >> n >> k; // find if k is present in given array
-    vector<ll> arr;
+    vector<ll> arr; // arr starts from 0th position
     for(ll i=0;i<n;i++){
         cin >> x;
         arr.push_back(x);
     }
+    // given: array is already sorted
     ll findindex = binarysearch(arr,0,n-1,k);
     cout << findindex; // if not present then it return -1
 }
@@ -40,13 +41,13 @@ int main(){
 /* 
 Input
 5 6
-1 2 5 4 2
+1 2 2 4 5
 Output
 -1
 
 Input 
 5 2
-1 3 4 2 5
+1 2 3 5 6
 Output 
-3
+1
 */
